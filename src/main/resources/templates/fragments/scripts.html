@@ -57,9 +57,9 @@
                     (buttonStates.isPhone ? '+phone' : '');
 
                 var codeUrlParts = [];
-                codeUrlParts.push('https://' + $('#okta_org').val() + '/oauth2/');
-                codeUrlParts.push($('#auth_server_id').val() + '/v1/authorize?');
-                codeUrlParts.push('client_id=' + $('#oidc_client_id').val() + '&');
+                codeUrlParts.push('https://' + $('#okta_org').html() + '/oauth2/');
+                codeUrlParts.push($('#auth_server_id').html() + '/v1/authorize?');
+                codeUrlParts.push('client_id=' + $('#oidc_client_id').html() + '&');
                 codeUrlParts.push('response_type=' + responseType + '&');
                 codeUrlParts.push('scope=' + scope + '&');
                 codeUrlParts.push('state=' + $('#state').html() + '&');
